@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFLEXO PERÚ - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()" style="cursor: pointer;"></i>
+            <span style="margin-left: 10px; font-weight: bold;">REFLEXO PERÚ</span>
+        </div>
+        <img class="logo" src="<?php echo $header_logo; ?>" alt="Logo of Reflexo Perú"/>
+    </header>
+    <div style="display: flex; height: calc(100vh - 64px);">
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <img class="sidebar-logo" src="<?php echo $profile_logo; ?>" alt="Logo of Reflexo Perú"/>
+                <span style="font-weight: bold; margin-top: 8px;">REFLEXO PERÚ</span>
+                <span style="font-size: 14px; color: #a0aec0;">Usuario</span>
+            </div>
+            <nav>
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li class="menu-item"><i class="fas fa-users menu-icon"></i><span>Usuarios</span></li>
+                    <li class="menu-item"><i class="fas fa-user-injured menu-icon"></i><span>Pacientes</span></li>
+                    <li class="menu-item"><i class="fas fa-user-tie menu-icon"></i><span>Empleados</span></li>
+                    <li class="menu-item"><i class="fas fa-boxes menu-icon"></i><span>Inventario</span></li>
+                    <li class="menu-item"><i class="fas fa-shopping-cart menu-icon"></i><span>Ventas</span></li>
+                    <li class="menu-item"><i class="fas fa-shopping-bag menu-icon"></i><span>Compras</span></li>
+                    <li class="menu-item"><i class="fas fa-university menu-icon"></i><span>Caja y Bancos</span></li>
+                    <li class="menu-item"><i class="fas fa-chart-line menu-icon"></i><span>Reportes</span></li>
+                    <li class="menu-item"><i class="fas fa-cog  menu-icon"></i><span>Ajustes</span></li>
+                    <li class="menu-item"><i class="fas fa-sign-out-alt menu-icon"></i><span>Cerrar Sesión</span></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="block-main">
+        <main class="main-content">
+            <h1 class="dashboard-title">Dashboard</h1>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h2>Usuarios Totales</h2>
+                    <p>1,234</p>
+                </div>
+                <div class="dashboard-card">
+                    <h2>Ventas del Mes</h2>
+                    <p>$56,789</p>
+                </div>
+                <div class="dashboard-card">
+                    <h2>Productos en Stock</h2>
+                    <p>567</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Todos los derechos reservados Reflexo Peru 2024</p>
+        </footer>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
